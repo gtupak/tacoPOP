@@ -16,6 +16,9 @@
 		C0A7B7071F7AB60F00F6ED73 /* DropShadow.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0A7B7061F7AB60F00F6ED73 /* DropShadow.swift */; };
 		C0A7B7091F7AB6CA00F6ED73 /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0A7B7081F7AB6CA00F6ED73 /* HeaderView.swift */; };
 		C0DA19761F7ABB0000AD312C /* Taco.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0DA19751F7ABB0000AD312C /* Taco.swift */; };
+		C0DA19781F7ABFEA00AD312C /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0DA19771F7ABFEA00AD312C /* DataService.swift */; };
+		C0DA197B1F7AC34300AD312C /* TacoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0DA19791F7AC34300AD312C /* TacoCell.swift */; };
+		C0DA197C1F7AC34300AD312C /* TacoCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C0DA197A1F7AC34300AD312C /* TacoCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,6 +45,9 @@
 		C0A7B7061F7AB60F00F6ED73 /* DropShadow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DropShadow.swift; sourceTree = "<group>"; };
 		C0A7B7081F7AB6CA00F6ED73 /* HeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
 		C0DA19751F7ABB0000AD312C /* Taco.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Taco.swift; sourceTree = "<group>"; };
+		C0DA19771F7ABFEA00AD312C /* DataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
+		C0DA19791F7AC34300AD312C /* TacoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TacoCell.swift; sourceTree = "<group>"; };
+		C0DA197A1F7AC34300AD312C /* TacoCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TacoCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,6 +123,8 @@
 				C007E6521F7AB3CF0025CEFE /* LaunchScreen.storyboard */,
 				C007E6711F7AB46A0025CEFE /* Main.storyboard */,
 				C0A7B7081F7AB6CA00F6ED73 /* HeaderView.swift */,
+				C0DA19791F7AC34300AD312C /* TacoCell.swift */,
+				C0DA197A1F7AC34300AD312C /* TacoCell.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -125,6 +133,7 @@
 			isa = PBXGroup;
 			children = (
 				C0DA19751F7ABB0000AD312C /* Taco.swift */,
+				C0DA19771F7ABFEA00AD312C /* DataService.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -203,9 +212,11 @@
 				TargetAttributes = {
 					C007E6451F7AB3CF0025CEFE = {
 						CreatedOnToolsVersion = 9.0;
+						LastSwiftMigration = 0900;
 					};
 					C007E6591F7AB3CF0025CEFE = {
 						CreatedOnToolsVersion = 9.0;
+						LastSwiftMigration = 0900;
 						TestTargetID = C007E6451F7AB3CF0025CEFE;
 					};
 				};
@@ -234,6 +245,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C0DA197C1F7AC34300AD312C /* TacoCell.xib in Resources */,
 				C007E6721F7AB46A0025CEFE /* Main.storyboard in Resources */,
 				C007E6541F7AB3CF0025CEFE /* LaunchScreen.storyboard in Resources */,
 				C007E6511F7AB3CF0025CEFE /* Assets.xcassets in Resources */,
@@ -254,6 +266,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C0DA197B1F7AC34300AD312C /* TacoCell.swift in Sources */,
+				C0DA19781F7ABFEA00AD312C /* DataService.swift in Sources */,
 				C007E64A1F7AB3CF0025CEFE /* AppDelegate.swift in Sources */,
 				C0A7B7071F7AB60F00F6ED73 /* DropShadow.swift in Sources */,
 				C007E6701F7AB4480025CEFE /* MainVC.swift in Sources */,
@@ -404,7 +418,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.essentialtech.TacoPOP;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
@@ -418,7 +432,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.essentialtech.TacoPOP;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
